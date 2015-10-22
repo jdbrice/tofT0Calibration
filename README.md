@@ -1,15 +1,6 @@
-BedRock
+t0Calibration
 ============
 
-A Foundation project for roobarb. Good starting point for a small project.
-
-1. Make sure Roobarb lib is installed
-2. Then git clone into working dir
-3. Add codes and go
-
-Includes:
-- project directory structure
-- Application entry point
-- Make file
-- quick build scripts
-- common .gitignore
+1. Create a null t0_4DB.dat - ie one with zeroed t0 corrections
+2. Create TOFrPicoDst from your MuDsts
+3. run and your done
