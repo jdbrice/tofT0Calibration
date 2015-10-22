@@ -172,7 +172,13 @@ void T0Calib::makeCorrections(){
 			for ( int iCell = 1; iCell <= 6; iCell ++ ){
 
 				string n = nameFor( iTray, iMod, iCell );
+				if ( aggregate[n].size() < 10 ){
+					correction[n] = 0.0f;
+					continue;
+				}
 				float corr = calcMean( aggregate[n] );
+
+
 
 				// ensure that the mean stays reasonable
 				corr = truncMean( aggregate[n], 3.0, corr );
