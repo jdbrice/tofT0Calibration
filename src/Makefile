@@ -4,7 +4,9 @@ project = app
 # source suffix
 source = .cpp 
 # object files to make
-objects = Engine.o
+objects = 	Engine.o \
+			TOFrPicoDst.o \
+			T0Calib.o
 
 sources = $(wildcard *.cpp)
 headers = $(wildcard ../include/*.h)

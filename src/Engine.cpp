@@ -1,12 +1,16 @@
 
-
+#include "Logger.h"
 #include "XmlConfig.h"
 using namespace jdb;
 
 #include <iostream>
 #include <exception>
 
+#include "T0Calib.h"
+
 int main( int argc, char* argv[] ) {
+
+	Logger::setGlobalLogLevel( "Trace" );
 
 	if ( argc >= 2 ){
 
@@ -25,6 +29,10 @@ int main( int argc, char* argv[] ) {
 				fileList = (string) argv[ 2 ];
 				jobPrefix = (string) argv[ 3 ];
 			}
+
+			T0Calib calib( &config, "T0Calib" );
+			calib.make();
+
 
 		} catch ( exception &e ){
 			cout << e.what() << endl;

@@ -1,0 +1,1316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nc",
+				"draw_ncoll_uncertainty"
+			],
+			[
+				"draw",
+				"draw_ncoll_uncertainty	(draw_ncoll_uncertainty.C)"
+			],
+			[
+				"std",
+				"stdev"
+			],
+			[
+				"tofPid",
+				"tofPidEffSets"
+			],
+			[
+				"tofPidEf",
+				"tofPidEffRanges"
+			],
+			[
+				"inc",
+				"inInclusiveRange"
+			],
+			[
+				"energ",
+				"energySet"
+			],
+			[
+				"ener",
+				"energySet"
+			],
+			[
+				"null",
+				"nullenergies"
+			],
+			[
+				"draw_",
+				"draw_rcp_vs_energy"
+			],
+			[
+				"Centr",
+				"CentralityLabels	(centralityMap.xml)"
+			],
+			[
+				"Tof",
+				"TofEff"
+			],
+			[
+				"nSigm",
+				"nSigmaDedxCut"
+			],
+			[
+				"nSigmaD",
+				"nSigmaDedxCut"
+			],
+			[
+				"nSigma",
+				"nSigmaDedx	(P.xml)"
+			],
+			[
+				"dedxS",
+				"dedxSigmaIdeal"
+			],
+			[
+				"rde",
+				"rdedx"
+			],
+			[
+				"char",
+				"charge"
+			],
+			[
+				"inclu",
+				"inclusive_vs_dedx	(TofEffSpectra.cpp)"
+			],
+			[
+				"TofEff",
+				"TofEffSpectra"
+			],
+			[
+				"TofEf",
+				"TofEffSpectra	(TofEffSpectra.cpp)"
+			],
+			[
+				"In",
+				"InclusiveSpectra"
+			],
+			[
+				"TofE",
+				"TofEffSpectra"
+			],
+			[
+				"SetMa",
+				"SetBottomMargin"
+			],
+			[
+				"SetTitle",
+				"SetTitleSize"
+			],
+			[
+				"nSigmaP",
+				"nSigmaAbovePOverride	(Fitter.cpp)"
+			],
+			[
+				"nSi",
+				"nSigAbovePOverride"
+			],
+			[
+				"nSig",
+				"nSigAboveP"
+			],
+			[
+				"fil",
+				"file_exists"
+			],
+			[
+				"Log",
+				"Logger::llAll	(export_spectra.C)"
+			],
+			[
+				"Logger",
+				"Logger::setGlobalLogLevel	(export_spectra.C)"
+			],
+			[
+				"normaliz",
+				"normalize_binning"
+			],
+			[
+				"stat",
+				"statHisto	(draw_single_spectra.C)"
+			],
+			[
+				"sta",
+				"statHisto"
+			],
+			[
+				"iCen",
+				"iCen1"
+			],
+			[
+				"Fee",
+				"FeedDown"
+			],
+			[
+				"appl",
+				"apply_feeddown"
+			],
+			[
+				"app",
+				"apply_tofEff	(ApplyPostCorr.cpp)"
+			],
+			[
+				"en",
+				"energy"
+			],
+			[
+				"double",
+				"double_current"
+			],
+			[
+				"fix",
+				"fix_current"
+			],
+			[
+				"SetPar",
+				"SetParLimits"
+			],
+			[
+				"ga",
+				"gauss1"
+			],
+			[
+				"pann",
+				"pannel_spectra_vs_centrality"
+			],
+			[
+				"pan",
+				"pannel_spectra_vs_centrality	(pannel_spectra_vs_centrality.C)"
+			],
+			[
+				"save",
+				"savePage	(FitRunner.cpp)"
+			],
+			[
+				"sys",
+				"sysSchema"
+			],
+			[
+				"centr",
+				"centrality_labels	(common.C)"
+			],
+			[
+				"tof_eff",
+				"tof_eff_unc"
+			],
+			[
+				"tofEf",
+				"tof_eff_systematic"
+			],
+			[
+				"tota",
+				"totals"
+			],
+			[
+				"yield",
+				"yield_hist_for	(single_compare.C)"
+			],
+			[
+				"zdSi",
+				"zdSigma"
+			],
+			[
+				"cen_sys",
+				"cen_sys_rcp"
+			],
+			[
+				"yLoc",
+				"yLocal_left	(export_spectra.C)"
+			],
+			[
+				"yLo",
+				"yLocal_left"
+			],
+			[
+				"tp",
+				"tpcEff_low	(export_spectra.C)"
+			],
+			[
+				"source",
+				"sources"
+			],
+			[
+				"total",
+				"total_systematics"
+			],
+			[
+				"cov",
+				"cov_matrix	(total_systematics.C)"
+			],
+			[
+				"error",
+				"error_weight"
+			],
+			[
+				"err",
+				"error_weight	(cov_matrix.C)"
+			],
+			[
+				"Get",
+				"GetNcols"
+			],
+			[
+				"report",
+				"reportYields"
+			],
+			[
+				"toff",
+				"tofEff_dist"
+			],
+			[
+				"do",
+				"doSystematic"
+			],
+			[
+				"c",
+				"c_str"
+			],
+			[
+				"yiel",
+				"yield_hist_for	(single_compare.C)"
+			],
+			[
+				"pt",
+				"ptBins"
+			],
+			[
+				"max_",
+				"max_pT"
+			],
+			[
+				"GetN",
+				"GetNbinsX"
+			],
+			[
+				"cen",
+				"centralities	(common.C)"
+			],
+			[
+				"cha",
+				"charges"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"cen_st",
+				"cen_stat_rcp"
+			],
+			[
+				"evan",
+				"evan_file"
+			],
+			[
+				"evan_ch",
+				"evan_charges"
+			],
+			[
+				"getD",
+				"getDataHist	(Fitter.h)"
+			],
+			[
+				"da",
+				"datasets"
+			],
+			[
+				"tof",
+				"tofEffWeight	(SpectraCorrecter.h)"
+			],
+			[
+				"feed",
+				"feedDownSysNSigma"
+			],
+			[
+				"Fe",
+				"FeedDown"
+			],
+			[
+				"PidDa",
+				"PidDataMaker"
+			],
+			[
+				"tpc",
+				"tpcSysNSigma"
+			],
+			[
+				"Ener",
+				"EnergyLossParams"
+			],
+			[
+				"ENergy",
+				"EnergyLossParams"
+			],
+			[
+				"TFit",
+				"TFitResultPtr	(TpcEffFitter.cpp)"
+			],
+			[
+				"covA",
+				"covArray"
+			],
+			[
+				"TFitR",
+				"TFitResultPtr"
+			],
+			[
+				"fCo",
+				"fCov"
+			],
+			[
+				"ran",
+				"randomSqrtCov	(Common.h)"
+			],
+			[
+				"fCov",
+				"fCovSqrt	(TpcEffFitter.cpp)"
+			],
+			[
+				"Draw",
+				"DrawCopy	(TpcEffFitter.cpp)"
+			],
+			[
+				"sampl",
+				"sampleStdev"
+			],
+			[
+				"dist",
+				"distAtX"
+			],
+			[
+				"TGraph",
+				"TGraphAsymmErrors"
+			],
+			[
+				"Save",
+				"savePage"
+			],
+			[
+				"out",
+				"output_path"
+			],
+			[
+				"output",
+				"output_path"
+			],
+			[
+				"Feed",
+				"FeedDown_Fit"
+			],
+			[
+				"input",
+				"input_file"
+			],
+			[
+				"Hi",
+				"HistoBook"
+			],
+			[
+				"Histo",
+				"HistoBook	(FeedDownFitter.h)"
+			],
+			[
+				"FeedD",
+				"FeedDownFitter"
+			],
+			[
+				"final",
+				"final_name"
+			],
+			[
+				"new",
+				"new_files"
+			],
+			[
+				"zb_Pi",
+				"zb_Pi_sigma"
+			],
+			[
+				"getN",
+				"getNormalization"
+			],
+			[
+				"rel",
+				"releaseShapes"
+			],
+			[
+				"delt",
+				"delta_K"
+			],
+			[
+				"sigMa",
+				"sigmaSets"
+			],
+			[
+				"shared",
+				"shared_ptr"
+			],
+			[
+				"prep",
+				"prepareSystematic"
+			],
+			[
+				"Data",
+				"DataPurity	(PostCorr_Pi.xml)"
+			],
+			[
+				"cut_n",
+				"cut_nSigma_Pi"
+			],
+			[
+				"zbSigm",
+				"zbSigmaIdeal"
+			],
+			[
+				"center",
+				"centerSpecies"
+			],
+			[
+				"ptBin",
+				"ptBinWidth"
+			],
+			[
+				"track",
+				"trackWeight"
+			],
+			[
+				"all",
+				"allCuts"
+			],
+			[
+				"Comm",
+				"Common::species"
+			],
+			[
+				"cutDe",
+				"cutDeuterons	(PidProjector.h)"
+			],
+			[
+				"data",
+				"datafile"
+			],
+			[
+				"proton",
+				"protonSigma"
+			],
+			[
+				"cutD",
+				"cutDeuterons	(PidProjector.h)"
+			],
+			[
+				"proto",
+				"protonSigma"
+			],
+			[
+				"name",
+				"namespace	(PidDataMaker.h)"
+			],
+			[
+				"Pi",
+				"PidPoint"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/AAAPackageDev/Support/Convert to ....sublime-build",
+					""
+				],
+				[
+					"Packages/AAAPackageDev/Support/Convert to ....sublime-build",
+					"JSON"
+				],
+				[
+					"Packages/AAAPackageDev/Support/Convert to ....sublime-build",
+					"Property List"
+				],
+				[
+					"Packages/AAAPackageDev/Support/Convert to ....sublime-build",
+					"YAML (Block Style)"
+				],
+				[
+					"Packages/AAAPackageDev/Support/Convert to ....sublime-build",
+					"YAML (Default Style)"
+				]
+			],
+			[
+				"Packages/AAAPackageDev/Support/Convert to ....sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 316.0,
+		"last_filter": "bash",
+		"selected_items":
+		[
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"bas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss roo",
+				"Set Syntax: ROOBARB Log File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"c+",
+				"Set Syntax: C++"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"pyth",
+				"Build With: Python - Syntax Check"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"tod",
+				"TodoReview: Open Files"
+			],
+			[
+				"to",
+				"TodoReview: Project Files"
+			],
+			[
+				"base",
+				"StringEncode: Base64 Decode"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"per",
+				"Permute Lines: Reverse"
+			],
+			[
+				"perm",
+				"Permute Lines: Reverse"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"disc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"c",
+				"Set Syntax: C++"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ssma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"ssC",
+				"Set Syntax: C++"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			]
+		],
+		"width": 552.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration"
+	],
+	"file_history":
+	[
+		"/star/institutions/rice/jdb/calib/ntupler/macro/tuple.C",
+		"/star/institutions/rice/jdb/calib/ntupler/qa.histo.root",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/zotero_masters_rpp.bib",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/rpp.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/v1/analysis.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/v1/intro.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/future.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/analysis.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/experimental.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/intro.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/Masters_Brandenburg.bbl",
+		"/Users/danielbrandenburg/Documents/Class/PHYS600_Frontiers_Particle/finalPaper/phys600.tex",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/.gitignore",
+		"/Users/danielbrandenburg/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/sublime_rpp.sublime-project",
+		"/Users/danielbrandenburg/Downloads/thesis_main.tex",
+		"/star/institutions/rice/jdb/calib/ntupler/geom.C",
+		"/star/institutions/rice/jdb/calib/tofGeomAlign/bin/run15/auau_FXT/pass0/calib.xml",
+		"/star/institutions/rice/jdb/calib/tofGeomAlign/bin/run15/auau_FXT/pass0/histo.xml",
+		"/star/institutions/rice/jdb/calib/ntupler/grid.xml",
+		"/Users/danielbrandenburg/.bash_profile",
+		"/star/u/jdb/work/Glauber/macros/glauber_nominal.C",
+		"/star/u/jdb/work/Glauber/StRoot/StFastGlauberMcMaker/StFastGlauberMcMaker.cxx",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/Correction/ApplyPostCorr.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_double_ratio.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/Fit.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/SpectraLoader.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/common.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/pannel_rcp_vs_energy.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_rcp_vs_energy_all.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_rcp_vs_energy.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_single_spectra.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_spectra_vs_centrality.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/pannel_spectra_vs_centrality.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/TSF/FitRunner.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/Fitter/make_xml_configs.py",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/dedx_tof/make_dedx_only.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/pannel_ratio_vs_centrality.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_ratio_vs_centrality.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_double_ratio_vs_energy.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/Spectra/InclusiveSpectra.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/raw_spectra/tof_inclusive_raw_Pi_p_0.dat",
+		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/spectra_14.5_Pi_p_0.dat",
+		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/spectra_14.5_K_p_0.dat",
+		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/spectra_14.5_P_p_0.dat",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TofEff_Fit.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/PostCorr.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/PidData_PostCorr_Pi.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/PidData_PostCorr_P.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/PidData_PostCorr_K.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/PidData_Merge.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/Fit_Merge.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/FeedDown_Merge.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/FeedDown_Maker.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/FeedDown_Fit.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/EnergyLoss.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TpcEff.dag",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TofEff_Pi.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TofEff_P.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TofEff_K.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TpcEff_Fit.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TpcEff_Make.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/TSF/FitRunner.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/TSF/HistorySet.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/Fitter/PostCorr_Pi.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/TofEff/P.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/template/common/binning.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/TofEff/make_xml_configs.py",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/McMaker/TpcEffFitter.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/qm_nominal/TofEff_Merge.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/TSF/FitSchema.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Spectra/PidProjector.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/TSF/Fitter.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/Fitter/zd_Pi.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/Fitter/zb_Pi.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/products/tof_eff/compare.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/Common/fitSchema_eff.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/Common/fitSchema_zb.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/Common/fitSchema_zd.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/TpcEff/make_xml_configs.py",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/tof_eff/Fitter/PostCorr_K.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/.gitignore",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/raw_spectra/export_raw_spectra.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_single_ratio.C",
+		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/embedding/cov_matrix.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_single_rcp.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/present/draw_rcp_for_energy.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/debadeepti/Fit.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/debadeepti/PidData_PostCorr_Pi.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/debadeepti/PidData_PostCorr_P.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/debadeepti/PidData_PostCorr_K.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/template/common/centralityMap.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/McMaker/TpcEffMaker.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/McMaker/TpcEffMaker.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/Engine.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/Makefile",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/deepti/TofEff/fit.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/Spectra/PidDataMaker.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/McMaker/TofEffMaker.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/debadeepti/TofEff_Pi.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/debadeepti/TofEff_P.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/runner/grid/debadeepti/TofEff_K.submit",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/deepti/Common/centralityMap.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/McMaker/TofEffFitter.cpp",
+		"/Users/danielbrandenburg/bnl/local/roo",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Spectra/PidDataMaker.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/src/Spectra/TofEffSpectra.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/nominal/TofEff/Pi.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Spectra/TofEffSpectra.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Spectra/InclusiveSpectra.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/nominal/TofEff/P.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/tof_eff/vs_dedx.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/nominal/Common/binning.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/TSF/Fitter.h",
+		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/deepti/compare/spectra_14.5_P_p_0.dat",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/systematics/export_spectra.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/cross_check/draw_single_compare.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Common.h",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/cross_check/draw_all_compare.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/dedx_tof/make_beta_only.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/dedx_tof/make.C",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/cross_check/SpectraLoader.h",
+		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/deepti/compare/spectra_14.5_P_p_5.dat",
+		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/deepti/compare/spectra_14.5_K_n_5.dat",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Correction/ApplyPostCorr.h",
+		"/Users/danielbrandenburg/Downloads/spectra_deepti/kap_spectra_15.gev.txt",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/nominal/Fitter/PostCorr_P.xml",
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/nominal/PostCorr/P.xml"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 112.0,
+		"where_history":
+		[
+			"",
+			"runner/grid/qm_nominal/*",
+			"src/*, include/*",
+			"",
+			"runner/grid/debadeepti",
+			"runner/grid/nSigmaP_high",
+			"",
+			"runner/grid/sys_dca_down",
+			"runner/grid/nominal_hesse",
+			"runner/grid/nominal_minos",
+			"runner/grid/debadeepti",
+			"runner/grid/fitSys",
+			"runner/grid/feedDown_low",
+			"runner/grid/feedDown_high",
+			"runner/grid/nominal_03",
+			"runner/grid/nominal_02",
+			"runner/grid/nominal_01",
+			"runner/grid/fitTofSchema",
+			"runner/grid/fitCorrSchema",
+			"runner/grid/fitWoMuInit",
+			"runner/grid/fitTofEff",
+			"runner/grid/dca_up",
+			"runner/grid/dca_low",
+			"runner/grid/nHitsDedx_low",
+			"runner/grid/nHitsDedx_up",
+			"runner/grid/nHitsFit_up",
+			"runner/grid/nHitsFit_low",
+			"runner/grid/feedDown_low",
+			"runner/grid/feedDown_high",
+			"runner/grid/tpcEff_high",
+			"runner/grid/tpcEff_low",
+			"runner/grid/nHitsRatio_up",
+			"runner/grid/nHitsRatio_low",
+			"runner/grid/ptRatio_loose",
+			"runner/grid/ptRatio_tight",
+			"runner/grid/dca_low",
+			"runner/grid/dca_up",
+			"runner/grid/nHitsFit_up",
+			"runner/grid/nHitsFit_low",
+			"runner/grid/nHitsFit_up",
+			"runner/grid/nHitsDedx_up",
+			"runner/grid/nHitsDedx_low",
+			"runner/grid/nHitsDedx_up",
+			"runner/grid/nHitsFit_up",
+			"runner/grid/nHitsFit_low",
+			"runner/grid/dca_low",
+			"runner/grid/dca_up",
+			"runner/grid/zd_sigma_large",
+			"runner/grid/zd_sigma_small",
+			"runner/grid/zb_sigma_small",
+			"runner/grid/zb_sigma_large",
+			"runner/grid/zLocal_loose",
+			"runner/grid/zLocal_tight",
+			"runner/grid/yLocal_tight",
+			"runner/grid/yLocal_loose",
+			"runner/grid/ptRatio_loose",
+			"runner/grid/ptRatio_tight",
+			"runner/grid/dca_up",
+			"runner/grid/template",
+			"runner/grid/dca_up",
+			"runner/grid/nHitsDedx_low",
+			"runner/grid/nHitsDedx_up",
+			"runner/grid/nHitsFit_up",
+			"runner/grid/nHitsFit_low",
+			"",
+			"mc_*.xml, rc_*.xml",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Rejecting Event",
+			"starcollaboration_transversemomentum_2003",
+			"m_{ll}",
+			"Peripheral",
+			"Central",
+			"Peripheral",
+			"$p_T$",
+			"sideways",
+			"$R_{CP}$",
+			"$R_{AA}$",
+			"specie",
+			"proton on proton",
+			"Au$+$Au",
+			"rapidi",
+			"~",
+			"smearing",
+			"mInelasticNNCrossSection",
+			"dmaxh",
+			"mfHardCore",
+			"GetRThetaPhi",
+			"[ en",
+			"en",
+			"stoi( iCen )",
+			"iCen",
+			"template",
+			"Inclusive",
+			"sigma",
+			"SigmaHistory",
+			").c_str()",
+			"\"+plc+\"",
+			"zb",
+			"pre",
+			"Tof",
+			"14.5",
+			"InclusiveSpectra",
+			"TofEffSpectra",
+			"TOF_EFF_SPECTRA",
+			"TOF_EFF",
+			", nSigmaAbovePOverride",
+			"/data/star/jdb12/RcpAnalysis/data/list/debadeepti/list_",
+			"np",
+			"warning",
+			"InclusiveSpectra",
+			"pt",
+			"hda->GetMaximum() *",
+			"plc_label( plc )",
+			"/data/list/list_",
+			"[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] ",
+			"stat",
+			"+ 2",
+			"vector<double> ",
+			"template",
+			"column",
+			"leg->",
+			"Ncol",
+			"column",
+			"coloumn",
+			"sys_dca_down",
+			"template",
+			"1",
+			"((",
+			"2*",
+			"sqrt( 2 * 3.14 )",
+			"2*[",
+			"f_a",
+			"1000",
+			"mu",
+			"1\n",
+			"1",
+			"mu",
+			"false",
+			"template",
+			"3.5",
+			"template",
+			"3.0",
+			"template",
+			"3.0",
+			"pi",
+			"Pi",
+			"template",
+			"string",
+			"mean",
+			"zd",
+			"tofEff",
+			"\"p\"",
+			"TH1",
+			"3.5",
+			"template",
+			"\"zb_\"",
+			"zb",
+			"\n",
+			",",
+			"template",
+			"sys",
+			"INFO",
+			"iPt + 1",
+			"template",
+			"\\t",
+			"eff_Pi       1.00000e+00",
+			"eff_Pi",
+			"DAN",
+			"report",
+			"originalSchema",
+			"systematics",
+			"source1+\"_\"+source2",
+			"c2",
+			"template",
+			"3.5",
+			"_p_",
+			"3.5",
+			"5.5",
+			"3.5",
+			"_p_",
+			"Pi",
+			"normalize_binning(",
+			", cen_n_coll, per_n_coll,",
+			"rcp",
+			"20",
+			"800",
+			"iPer,",
+			"rcp",
+			"6.",
+			"\"Pi\"",
+			"\"19.6\"",
+			"sys",
+			"Content",
+			"stat",
+			"per_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"qm_nominal",
+			"HistorySet",
+			"/data/list/debadeepti/list_",
+			"nSigmaP_high",
+			"sys_dca_low",
+			"sys_dca_down",
+			"nominal_hesse",
+			"nominal_minos",
+			"debadeepti",
+			"fitSys",
+			"feedDown_low",
+			"feedDown_high",
+			"nominal_03",
+			"nominal_02",
+			"nominal_01",
+			"fitTofSchema",
+			"fitCorrSchema",
+			"fitWoMuInit",
+			"fitTofEff",
+			"dca_up",
+			"dca_low",
+			"nHitsDedx_low",
+			"nHitsDedx_up",
+			"nHitsFit_up",
+			"nHitsFit_low",
+			"feedDown_low",
+			"feedDown_high",
+			"tpcEff_high",
+			"tpcEff_low",
+			"nHitsRatio_up",
+			"nHitsRatio_low",
+			"ptRatio_loose",
+			"ptRatio_tight",
+			"dca_low",
+			"dca_up",
+			"nHitsFit_up",
+			"nHitsFit_low",
+			"nHitsFit_up",
+			"nHitsDedx_up",
+			"nHitsDedx_low",
+			"nHitsDedx_up",
+			"nHitsFit_up",
+			"nHitsFit_low",
+			"dca_low",
+			"dca_up",
+			"zd_sigma_large",
+			"zd_sigma_small",
+			"zb_sigma_small",
+			"zb_sigma_large",
+			"zLocal_loose",
+			"zLocal_tight",
+			"yLocal_tight",
+			"yLocal_loose",
+			"ptRatio_loose",
+			"ptRatio_tight",
+			"dca_up",
+			"template",
+			"dca_up",
+			"nHitsDedx_low",
+			"nHitsDedx_up",
+			"nHitsFit_up",
+			"nHitsFit_low",
+			"penaltyScale",
+			"Common::yieldName",
+			"\"binning.ptEff\"",
+			"Common::p(",
+			"Common::zbName",
+			"Common::zdName",
+			"Common::tofName",
+			"Common::chargeString",
+			"Common::species",
+			"Efficiency/EffParams.h",
+			"Efficiency/TofEffFitter.h",
+			"Efficiency/TofEffMaker.h",
+			"127.0.0.1",
+			"192.168.1.9",
+			"P.xml",
+			"Pi.xml",
+			"",
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 146.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.package_dev":
+	{
+		"height": 158.0
+	},
+	"pinned_build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"project": "t0.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tsf/fitrunner.cpp",
+				"src/TSF/FitRunner.cpp"
+			],
+			[
+				"common.cpp",
+				"src/Common.cpp"
+			],
+			[
+				"present/pidyieldpresenter.cpp",
+				"src/Present/PidYieldPresenter.cpp"
+			],
+			[
+				"tsf/fitter.cpp",
+				"src/TSF/Fitter.cpp"
+			],
+			[
+				"spectra/piddatamaker.cpp",
+				"src/Spectra/PidDataMaker.cpp"
+			],
+			[
+				"spectra/pidhistomaker.cpp",
+				"src/Spectra/PidHistoMaker.cpp"
+			],
+			[
+				"include/spectra/pidhistomaker.h",
+				"include/Spectra/PidHistoMaker.h"
+			],
+			[
+				"mcmaker/tpcefffitter.cpp",
+				"src/McMaker/TpcEffFitter.cpp"
+			],
+			[
+				"params/energylossparams.cpp",
+				"src/Params/EnergyLossParams.cpp"
+			],
+			[
+				"pidhistomaker.cpp",
+				"src/Spectra/PidHistoMaker.cpp"
+			],
+			[
+				"inclusivespectra.cpp",
+				"src/InclusiveSpectra.cpp"
+			],
+			[
+				"include/tsf/fitrunner.h",
+				"include/TSF/FitRunner.h"
+			],
+			[
+				"pidphasespace.h",
+				"include/PidPhaseSpace.h"
+			],
+			[
+				".js",
+				"notebook/static/auth/js/main.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 370.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 360.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
