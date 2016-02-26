@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"make",
+				"makeCorrections	(T0Calib.h)"
+			],
+			[
+				"corr",
+				"correction"
+			],
+			[
+				"calc",
+				"calcStd"
+			],
+			[
+				"ke",
+				"keepEvent"
+			],
+			[
+				"it",
+				"iteration"
+			],
+			[
+				"tof",
+				"tofCorr"
+			],
+			[
+				"t0",
+				"T0Calib"
+			],
+			[
+				"cell",
+				"cellMean	(T0Calib.h)"
+			],
+			[
+				"tra",
+				"trayMean	(T0Calib.h)"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"TOF",
+				"TOFrPicoDst"
+			],
+			[
+				"job",
+				"jobPrefix"
+			],
+			[
+				"file",
+				"fileList"
+			],
+			[
 				"nc",
 				"draw_ncoll_uncertainty"
 			],
@@ -296,10 +348,6 @@
 				"charges"
 			],
 			[
-				"file",
-				"file_name"
-			],
-			[
 				"cen_st",
 				"cen_stat_rcp"
 			],
@@ -318,10 +366,6 @@
 			[
 				"da",
 				"datasets"
-			],
-			[
-				"tof",
-				"tofEffWeight	(SpectraCorrecter.h)"
 			],
 			[
 				"feed",
@@ -470,55 +514,27 @@
 			[
 				"center",
 				"centerSpecies"
-			],
-			[
-				"ptBin",
-				"ptBinWidth"
-			],
-			[
-				"track",
-				"trackWeight"
-			],
-			[
-				"all",
-				"allCuts"
-			],
-			[
-				"Comm",
-				"Common::species"
-			],
-			[
-				"cutDe",
-				"cutDeuterons	(PidProjector.h)"
-			],
-			[
-				"data",
-				"datafile"
-			],
-			[
-				"proton",
-				"protonSigma"
-			],
-			[
-				"cutD",
-				"cutDeuterons	(PidProjector.h)"
-			],
-			[
-				"proto",
-				"protonSigma"
-			],
-			[
-				"name",
-				"namespace	(PidDataMaker.h)"
-			],
-			[
-				"Pi",
-				"PidPoint"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "bin/calib.xml",
+			"settings":
+			{
+				"buffer_size": 806,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/T0Calib.cpp",
+			"settings":
+			{
+				"buffer_size": 4607,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -721,10 +737,22 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration"
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/bin",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/src"
 	],
 	"file_history":
 	[
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/README.md",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/bin/calib.xml",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/src/Engine.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/src/Makefile",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/include/T0Calib.h",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/src/T0Calib.cpp",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/bin/log",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/bin/params.dat",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/include/TOFrPicoDst.h",
+		"/Users/danielbrandenburg/bnl/local/work/tofT0Calibration/src/TOFrPicoDst.cpp",
 		"/star/institutions/rice/jdb/calib/ntupler/macro/tuple.C",
 		"/star/institutions/rice/jdb/calib/ntupler/qa.histo.root",
 		"/Users/danielbrandenburg/Documents/Class/Masters_RPP/zotero_masters_rpp.bib",
@@ -842,21 +870,11 @@
 		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/deepti/compare/spectra_14.5_P_p_0.dat",
 		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/systematics/export_spectra.C",
 		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/cross_check/draw_single_compare.C",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Common.h",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/cross_check/draw_all_compare.C",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/dedx_tof/make_beta_only.C",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/dedx_tof/make.C",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/script/cross_check/SpectraLoader.h",
-		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/deepti/compare/spectra_14.5_P_p_5.dat",
-		"/Users/danielbrandenburg/bnl/local/data/RcpAnalysis/spectra/deepti/compare/spectra_14.5_K_n_5.dat",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Correction/ApplyPostCorr.h",
-		"/Users/danielbrandenburg/Downloads/spectra_deepti/kap_spectra_15.gev.txt",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/nominal/Fitter/PostCorr_P.xml",
-		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/config/nominal/PostCorr/P.xml"
+		"/Users/danielbrandenburg/bnl/local/work/rcpMaker/include/Common.h"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 73.0
 	},
 	"find_in_files":
 	{
@@ -937,6 +955,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"make2s",
+			"INFO",
+			"10, 1, 1",
+			"tuple",
+			"vals",
+			"double",
+			"tuple",
+			"inning",
+			"LOG_",
 			"Rejecting Event",
 			"starcollaboration_transversemomentum_2003",
 			"m_{ll}",
@@ -1055,16 +1082,7 @@
 			", cen_n_coll, per_n_coll,",
 			"rcp",
 			"20",
-			"800",
-			"iPer,",
-			"rcp",
-			"6.",
-			"\"Pi\"",
-			"\"19.6\"",
-			"sys",
-			"Content",
-			"stat",
-			"per_"
+			"800"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1162,8 +1180,184 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "bin/calib.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 806,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/T0Calib.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								349,
+								349
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

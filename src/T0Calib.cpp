@@ -4,6 +4,7 @@
 
 T0Calib::T0Calib( XmlConfig * config, string np, string fileList, string jobPrefix) : TreeAnalyzer( config, np, fileList, jobPrefix ){
 
+	Logger::setGlobalLogLevel("info");
 
 	INFO( tag, "" );
 
@@ -59,18 +60,6 @@ void T0Calib::postEventLoop(){
 	INFO(tag, "");
 
 	makeCorrections();
-
-	// for ( int iTray = 1; iTray <= 120; iTray++ ){
-	// 	for ( int iMod = 1; iMod <= 32; iMod ++ ){
-	// 		int iCell = 1;
-	// 		// for ( int iCell = 1; iCell <= 6; iCell ++ ){
-	// 			INFO( tag, iTray << " " << iMod << " " << iCell );
-	// 			INFO( tag, "N = " << aggregate[nameFor(iTray, iMod, iCell)].size() );
-	// 			INFO( tag, "Mean = " << calcMean( aggregate[nameFor(iTray, iMod, iCell)] ) << " +/- " << calcStd(aggregate[nameFor(iTray, iMod, iCell)]) );
-	// 			INFO( tag, "TMean = " << truncMean( aggregate[nameFor(iTray, iMod, iCell)] ) << " +/- " << calcStd(aggregate[nameFor(iTray, iMod, iCell)]) );
-	// 		// }
-	// 	}
-	// }
 	
 	inverseBeta(1);
 
@@ -93,8 +82,8 @@ void T0Calib::inverseBeta( int iteration ){
     if ( iteration <= 0 )
     	ibName = "b.iBetaFirst";
 	HistoBins ibBins( cfg, ibName ); 
-	book->make2D( "inverseBeta"+ts(iteration) , "1/beta : it " + ts(iteration), pBins.nBins(), pBins.getBins().data(), ibBins.nBins(), ibBins.getBins().data() );
-    
+	TH2F * h2 = new TH2F( ("inverseBeta"+ts(iteration)).c_str() , ("1/beta : it " + ts(iteration)).c_str(), pBins.nBins(), pBins.getBins().data(), ibBins.nBins(), ibBins.getBins().data() );
+    book->add( "inverseBeta"+ts(iteration), h2 );
     
     TaskTimer t;
     t.start();

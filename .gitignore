@@ -19,3 +19,6 @@
 /bin/app
 # but keep the sample config
 !/bin/config.xml
+
+# added by GitSavvy
+/bin/run15/
