@@ -2,18 +2,21 @@
 #include "math.h"
 
 
-T0Calib::T0Calib( XmlConfig * config, string np, string fileList, string jobPrefix) : TreeAnalyzer( config, np, fileList, jobPrefix ){
+T0Calib::T0Calib( ) {
 
-	Logger::setGlobalLogLevel("info");
+}
 
-	INFO( tag, "" );
+void T0Calib::initialize( ){
+	
+
+	INFO( classname(), "" );
 
 	pico = new TOFrPicoDst( chain );
-	book->makeAll( nodePath + "histograms" );
+	book->makeAll( nodePath + ".histograms" );
 }
 
 T0Calib::~T0Calib(){
-	INFO(tag, "");
+	INFO(classname(), "");
 }
 
 void T0Calib::preEventLoop(){
@@ -57,7 +60,7 @@ void T0Calib::analyzeEvent(){
 }
 
 void T0Calib::postEventLoop(){
-	INFO(tag, "");
+	INFO(classname(), "");
 
 	makeCorrections();
 	
@@ -70,18 +73,18 @@ void T0Calib::postEventLoop(){
 void T0Calib::inverseBeta( int iteration ){
 
     if ( !chain ){
-        logger->error(__FUNCTION__) << "Invalid DataSource " << endl;
+        ERROR( classname(), "Invalid DataSource ");
         return;
     }
 
     /**
      * Make histos
      */
-    HistoBins pBins( cfg, "b.p" );
+    HistoBins pBins( config, "b.p" );
     string ibName = "b.iBeta";
     if ( iteration <= 0 )
     	ibName = "b.iBetaFirst";
-	HistoBins ibBins( cfg, ibName ); 
+	HistoBins ibBins( config, ibName ); 
 	TH2F * h2 = new TH2F( ("inverseBeta"+ts(iteration)).c_str() , ("1/beta : it " + ts(iteration)).c_str(), pBins.nBins(), pBins.getBins().data(), ibBins.nBins(), ibBins.getBins().data() );
     book->add( "inverseBeta"+ts(iteration), h2 );
     
@@ -89,7 +92,7 @@ void T0Calib::inverseBeta( int iteration ){
     t.start();
 
     Int_t nEvents = (Int_t)chain->GetEntries();
-    INFO( tag, "Loaded: " << nEvents << " events " );
+    INFO( classname(), "Loaded: " << nEvents << " events " );
     
     TaskProgress tp( "Plotting 1/beta", nEvents );
     
@@ -132,12 +135,12 @@ void T0Calib::inverseBeta( int iteration ){
             
         } // loop on tofHits
     } // end loop on events
-    INFO( tag, "Completed in " << t.elapsed() );
+    INFO( classname(), "Completed in " << t.elapsed() );
 }
 
 void T0Calib::exportParameters(){
 
-	string output = cfg->getString( nodePath + "output.params", "params.dat" );
+	string output = config.getString( nodePath + ".output.params", "params.dat" );
 	ofstream out( output.c_str() );
 	for ( int iTray = 1; iTray <= 120; iTray++ ){
 		for ( int iMod = 1; iMod <= 32; iMod ++ ){

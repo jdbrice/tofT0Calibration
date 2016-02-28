@@ -29,9 +29,10 @@ protected:
 	void inverseBeta( int iteration = 0 );
 
 public:
-	static constexpr auto tag = "T0Calib";
+	virtual const char* classname() const { return "T0Calib"; }
 
-	T0Calib( XmlConfig * config, string np, string fileList ="", string jobPrefix ="");
+	T0Calib( );
+	virtual void initialize( );
 	~T0Calib();
 
 	virtual bool keepEvent();
@@ -78,16 +79,16 @@ public:
 		float total = 0;
 		int n = 0;
 		for ( float v : set ){
-			DEBUG( tag, "v - mean(" << _mean << " ) = " << fabs(v - _mean) << " < " <<  (_std * nSig) )
+			DEBUG( classname(), "v - mean(" << _mean << " ) = " << fabs(v - _mean) << " < " <<  (_std * nSig) )
 			if ( fabs( v - _mean ) < _std * nSig ){
 				total += v;
 				n++;
-				DEBUG( tag, "accept value = " << v );
+				DEBUG( classname(), "accept value = " << v );
 			} else {
-				DEBUG( tag, "rejected value = " << v  );
+				DEBUG( classname(), "rejected value = " << v  );
 			}
 		}
-		DEBUG( tag, "total=" << total << ", n = " << n );
+		DEBUG( classname(), "total=" << total << ", n = " << n );
 		return total / (float)n;
 	}
 

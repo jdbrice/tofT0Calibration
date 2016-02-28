@@ -30,8 +30,9 @@ int main( int argc, char* argv[] ) {
 				jobPrefix = (string) argv[ 3 ];
 			}
 
-			T0Calib calib( &config, "T0Calib" );
-			calib.make();
+			T0Calib calib;
+			calib.init( config, "T0Calib", -1 );
+			calib.run();
 
 
 		} catch ( exception &e ){
