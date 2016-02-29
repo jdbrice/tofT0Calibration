@@ -13,6 +13,9 @@ void T0Calib::initialize( ){
 
 	pico = new TOFrPicoDst( chain );
 	book->makeAll( nodePath + ".histograms" );
+
+	aggregateBy = config.getString( nodePath + ".Aggregate:by", "cell" );
+	INFO( classname(), "Aggregating by " << aggregateBy );
 }
 
 T0Calib::~T0Calib(){
@@ -48,7 +51,9 @@ void T0Calib::analyzeEvent(){
 		if ( !keepHit(iHit) )
 			continue;
 
+		DEBUG( classname(), "Getting name" );
 		string n = nameFor( pico->tray[ iHit ], pico->module[ iHit ], pico->cell[ iHit ] );
+		DEBUG( classname(), "Name = " << n );
 		aggregate[ n ].push_back( 
 			
 				(pico->tofCorr[ iHit ] - expectedTof( pico->length[iHit], pico->pt[ iHit ] * cosh( pico->eta[ iHit ] ) ) ) 
@@ -77,6 +82,8 @@ void T0Calib::inverseBeta( int iteration ){
         return;
     }
 
+    
+
     /**
      * Make histos
      */
@@ -92,12 +99,17 @@ void T0Calib::inverseBeta( int iteration ){
     t.start();
 
     Int_t nEvents = (Int_t)chain->GetEntries();
-    INFO( classname(), "Loaded: " << nEvents << " events " );
+	nEventsToProcess = config.getInt( nodePath + ".input.dst:nEvents", nEvents );
+	
+	// if neg then process all
+	if ( nEventsToProcess < 0 )
+		nEventsToProcess = nEvents;
+    INFO( classname(), "Loaded: " << nEventsToProcess << " events " );
     
-    TaskProgress tp( "Plotting 1/beta", nEvents );
+    TaskProgress tp( "Plotting 1/beta", nEventsToProcess );
     
     // loop over all events
-    for(Int_t i=0; i<nEvents; i++) {
+    for(Int_t i=0; i<nEventsToProcess; i++) {
         chain->GetEntry(i);
 
         tp.showProgress( i );
@@ -159,9 +171,19 @@ void T0Calib::exportParameters(){
 }
 
 void T0Calib::makeCorrections(){
+
+	int nCells = 1;
+	int nMods = 1;
+	if ( "cell" == aggregateBy ){
+		nCells = 6;
+		nMods = 32;
+	}
+	if ( "module" == aggregateBy || "board" == aggregateBy )
+		nMods = 32;
+
 	for ( int iTray = 1; iTray <= 120; iTray++ ){
-		for ( int iMod = 1; iMod <= 32; iMod ++ ){
-			for ( int iCell = 1; iCell <= 6; iCell ++ ){
+		for ( int iMod = 1; iMod <= nMods; iMod ++ ){
+			for ( int iCell = 1; iCell <= nCells; iCell ++ ){
 
 				string n = nameFor( iTray, iMod, iCell );
 				if ( aggregate[n].size() < 10 ){
@@ -169,8 +191,6 @@ void T0Calib::makeCorrections(){
 					continue;
 				}
 				float corr = calcMean( aggregate[n] );
-
-
 
 				// ensure that the mean stays reasonable
 				corr = truncMean( aggregate[n], 3.0, corr );

@@ -19,7 +19,7 @@ protected:
 
 	TOFrPicoDst * pico;
 
-	
+	string aggregateBy;
 	map<string, float> correction;
 	map<string, vector<float>> aggregate;
 	
@@ -40,13 +40,35 @@ public:
 	virtual void preEventLoop();
 	virtual void postEventLoop();
 
+
+
 	string nameFor( int tray, int module = -1, int cell = -1 ){
-		if ( -1 == module && -1  == cell )
+		
+		DEBUG( classname(), "aggregating "<< aggregateBy  );
+
+		// 
+		// else if ( "module" == aggregateBy || "board" == aggregateBy )
+		// 	return fullNameFor( tray, module, -1 );
+		// else 
+		if ( "tray" == aggregateBy )
+			return fullNameFor( tray, -1, -1 );
+		if ( "cell" == aggregateBy )
+			return fullNameFor( tray, module, cell );
+		if ( "module" == aggregateBy || "board" == aggregateBy )
+			return fullNameFor( tray, module, -1 );
+
+		return "";
+	}
+
+	string fullNameFor( int tray, int module = -1, int cell = -1 ){
+		if ( -1 == module && -1 == cell )
 			return "t"+ts( tray );
 		if (  -1  == cell )
 			return "t"+ts( tray )+"m"+ts(module);
 		else
 			return "t"+ts( tray )+"m"+ts(module)+"c"+ts(cell);
+
+		return "";
 	}
 
 
