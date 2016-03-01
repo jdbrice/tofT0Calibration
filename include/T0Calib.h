@@ -122,6 +122,9 @@ public:
 		double p = pico->pt[ iHit ] * cosh( pico->eta[ iHit ] );
 	    double nSigPi = pico->nSigPi[ iHit ];
 
+	    if ( pico->tofCorr[ iHit ] * 1 != pico->tofCorr[ iHit ] )
+	    	return false;
+
 	    if ( 0.3 > p || 0.6 < p ) 
 	        return false;
 	    if ( nSigPi > 2.0 ) 

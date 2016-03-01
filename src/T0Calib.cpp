@@ -59,6 +59,15 @@ void T0Calib::analyzeEvent(){
 				(pico->tofCorr[ iHit ] - expectedTof( pico->length[iHit], pico->pt[ iHit ] * cosh( pico->eta[ iHit ] ) ) ) 
 
 				);
+
+		INFO( classname(), "{" );
+		INFO( classname(), "DT = " << (pico->tofCorr[ iHit ] - expectedTof( pico->length[iHit], pico->pt[ iHit ] * cosh( pico->eta[ iHit ] ) ) )  );
+		INFO( classname(), "tofCorr = " << pico->tofCorr[ iHit ] );
+		INFO( classname(), "eTOF = " << expectedTof( pico->length[iHit], pico->pt[ iHit ] * cosh( pico->eta[ iHit ] ) ) );
+		INFO( classname(), "l, pt, eta = " << pico->length[iHit] <<", " << pico->pt[ iHit ] <<", " << cosh( pico->eta[ iHit ] ) );
+		INFO( classname(), "}" );
+
+
 	}
 
 
