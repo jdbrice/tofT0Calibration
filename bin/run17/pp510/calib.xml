@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<Logger logLevel="info" globalLogLevel="info" />
+	<T0Calib nEventLoops="2">
+		<Logger logLevel="info" globalLogLevel="warning" />
+		<input>
+			<dst treeName="tof" url="/Users/danielbrandenburg/bnl/local/data/Run17/vpd_slew/t0_calib/" maxFiles="500" nEvents="1000000" />
+		</input>
+
+		<output>
+			<data>run17/pp510/t0QA.root</data>
+			<params>run17/pp510/params.dat</params>
+		</output>
+
+		<histograms>
+			<Histo name="occupancy_tray" title="Tray Occupancy" bins_x="b.tray" />
+			<Histo name="pionDeltaT" title="pion delta tof" bins_x="b.tray" bins_y="b.reso" />
+		</histograms>
+
+		<Aggregate by="board" />
+
+	</T0Calib>
+
+	<b>
+		<tray width="1" min="0" max="123" />
+		<p width="0.01" min="0" max="5" />
+		<iBeta width="0.003" min="0" max="2.4" />
+		<iBetaFirst width="0.003" min="-20" max="20" />
+		<reso width="0.005" min="-5.5" max="5.5" />
+	</b>
+
+</config>

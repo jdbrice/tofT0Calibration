@@ -16,6 +16,26 @@ void T0Calib::initialize( ){
 
 	aggregateBy = config.getString( nodePath + ".Aggregate:by", "cell" );
 	INFO( classname(), "Aggregating by " << aggregateBy );
+
+
+	int nCells = 1;
+	int nMods = 1;
+	if ( "cell" == aggregateBy ){
+		nCells = 6;
+		nMods = 32;
+	}
+	if ( "module" == aggregateBy || "board" == aggregateBy )
+		nMods = 32;
+
+	for ( int iTray = 1; iTray <= 120; iTray++ ){
+		for ( int iMod = 1; iMod <= nMods; iMod ++ ){
+			for ( int iCell = 1; iCell <= nCells; iCell ++ ){
+				string n = nameFor( iTray, iMod, iCell );
+				correction[ n ] = 0;
+			}
+		}
+	}
+
 }
 
 T0Calib::~T0Calib(){
@@ -25,7 +45,10 @@ T0Calib::~T0Calib(){
 void T0Calib::preEventLoop(){
 	book->cd();
 
-	// inverseBeta();
+	if ( iEventLoop == 0 )
+		inverseBeta();
+
+	aggregate.clear();
 }
 
 bool T0Calib::keepEvent(){
@@ -56,7 +79,7 @@ void T0Calib::analyzeEvent(){
 		DEBUG( classname(), "Name = " << n );
 		aggregate[ n ].push_back( 
 			
-				(pico->tofCorr[ iHit ] - expectedTof( pico->length[iHit], pico->pt[ iHit ] * cosh( pico->eta[ iHit ] ) ) ) 
+				(pico->tofCorr[ iHit ] - correction[ n ] - expectedTof( pico->length[iHit], pico->pt[ iHit ] * cosh( pico->eta[ iHit ] ) ) ) 
 
 				);
 
@@ -78,7 +101,7 @@ void T0Calib::postEventLoop(){
 
 	makeCorrections();
 	
-	inverseBeta(1);
+	inverseBeta( iEventLoop + 1);
 
 	exportParameters();
 }
@@ -103,6 +126,8 @@ void T0Calib::inverseBeta( int iteration ){
 	HistoBins ibBins( config, ibName ); 
 	TH2F * h2 = new TH2F( ("inverseBeta"+ts(iteration)).c_str() , ("1/beta : it " + ts(iteration)).c_str(), pBins.nBins(), pBins.getBins().data(), ibBins.nBins(), ibBins.getBins().data() );
     book->add( "inverseBeta"+ts(iteration), h2 );
+    book->clone( "pionDeltaT", "pionDeltaT" + ts(iteration) );
+
     
     TaskTimer t;
     t.start();
@@ -138,16 +163,16 @@ void T0Calib::inverseBeta( int iteration ){
             double corrTof = pico->tofCorr[ iHit ];
             string n = nameFor( pico->tray[ iHit ], pico->module[ iHit ], pico->cell[ iHit ] );
             
-            if (aggregate[n].size() >= 10 ){
+            if (aggregate[n].size() >= 3 ){
             	float corr = correction[n];
             	corrTof = corrTof - corr;
-            } else if ( iteration >=1 &&  aggregate[n].size() < 20 )
+            } else if ( iteration >=1 && aggregate[n].size() < 20 )
             	continue;
 
-            if ( keepHit( iHit ) && iteration >= 1 ){
+            if ( keepHit( iHit ) ){
         		float eTof = expectedTof( pico->length[iHit], pico->pt[ iHit ] * cosh( pico->eta[ iHit ] ) );
         		float dt = corrTof - eTof;
-        		book->fill( "pionDeltaT", pico->tray[iHit], dt );
+        		book->fill( "pionDeltaT" + ts(iteration), pico->tray[iHit], dt );
         	}
             
             double iBeta = (corrTof / tLength )*cLight;
@@ -206,7 +231,7 @@ void T0Calib::makeCorrections(){
 				corr = truncMean( aggregate[n], 2.0, corr );
 				corr = truncMean( aggregate[n], 1.0, corr );
 
-				correction[ n ] = corr;
+				correction[ n ] += corr;
 			}
 		}
 	}
